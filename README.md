@@ -33,8 +33,8 @@ The specific versions of the required modules are listed in the **requirements.t
 ├── metric_helper.py 
 ├── util.py
 ```
-# Dataset preparation
-## Throat and acoustic microphone paired dataset
+# Dataset
+### Throat and acoustic microphone paired dataset
 * <a href="https://hina3271.github.io/taps-dataset/"> 60 people, 12.7 hours of training data with 5,000 paired utterances and 2.6 hours of evaluation data </a>
 
 # Quick Start
