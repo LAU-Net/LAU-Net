@@ -6,7 +6,7 @@ The specific versions of the required modules are listed in the **requirements.t
 
 # LAU-Net Overview
 <p align="center" >
-	<img src="https://github.com/CUHK-AIoT-Sensing/vibvoice/blob/main/vibvoice/overview.jpg" width="700">
+	<img src="https://github.com/yonghunsong/LAU-Net/blob/main/figure.PNG" width="700">
 </p>
 
 # Project Strcuture
