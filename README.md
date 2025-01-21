@@ -3,6 +3,9 @@ This repository contains the implementation of LAU-Net, a novel approach for spe
 
 # Requirements
 The specific versions of the required modules are listed in the **requirements.txt** file.
+    ```
+    pip install -r requirements.txt
+    ```
 
 # LAU-Net Overview
 <p align="center" >
