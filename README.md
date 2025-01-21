@@ -16,16 +16,19 @@ The specific versions of the required modules are listed in the **requirements.t
 # Project Strcuture
 ```
 .
-├── dataset
-│   ├── Training
+├── dataset/
+│   ├── Training/
 │   │   ├── p00
-│   │   │   ├── u00
-│   │   │   ├── u01
+│   │   │   ├── p00_u00_acc.wav
+│   │   │   ├── p00_u00_mic.wav
+│   │   │   ├── p00_u01_acc.wav
+│   │   │   ├── p00_u01_mic.wav
+│   │   │   ├── p00_u02_acc.wav
 │   │   │   ├── ...
 │   │   ├── p01
-│   ├── Test
+│   ├── Test/
 │   │   ├── ...
-├── checkpoint
+├── checkpoint/
 │
 ├── preprocessing.py        
 ├── dataset.py
