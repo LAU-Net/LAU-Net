@@ -1,29 +1,106 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LAU-Net: Lightweight Multi-Modal Speech Enhancement</title>
-    <link rel="stylesheet" href="style.css">
+    <title>LAU-Net: A Lightweight Multi-Modal Speech Enhancement Model Leveraging a Skin-Attachable Accelerometer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 20px;
+            margin-top: 30px;
+        }
+        .abstract {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-left: 5px solid #007BFF;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        audio {
+            width: 100px;
+        }
+        img {
+            width: 100px;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>LAU-Net: Lightweight Multi-Modal Speech Enhancement</h1>
-    </header>
+    <h1>LAU-Net: A Lightweight Multi-Modal Speech Enhancement Model Leveraging a Skin-Attachable Accelerometer</h1>
 
-    <section>
-        <h2>Introduction</h2>
-        <p>Welcome to the official page of LAU-Net. This model enhances speech in noisy environments using harmonic attention and phase merge techniques.</p>
-    </section>
+    <h2>Introduction</h2>
+    <p>Welcome to the official page of LAU-Net. This model enhances speech in noisy environments using harmonic attention and phase merge techniques.</p>
 
-    <section>
-        <h2>Sample Audio</h2>
-        <audio controls>
-            <source src="assets/audio/sample.wav" type="audio/wav">
-            Your browser does not support the audio element.
-        </audio>
-    </section>
+    <div class="abstract">
+        <h2>Abstract</h2>
+        <p>Speech enhancement in noisy environments is challenging as microphones (MICs) are susceptible to ambient noise. Skin-attachable accelerometers (ACCs) offer a noise-resistant alternative by capturing speech vibration through the skin, complementing MIC limitations. However, prior multi-modal models using both sensors face trade-offs between processing overhead and performance. In this study, we propose a lightweight ACC-assisted U-Net (LAU-Net), a multi-modal model for real-time speech enhancement. LAU-Net consists of two low-complexity components. First, a harmonic attention module extracts harmonics from ACC signals and applies attention to them in the spectrogram. Second, a phase merge strategy adaptively selects between MIC and ACC phases based on noise levels. In addition, we apply 8-bit quantization to reduce computational cost. The LAU-Net achieves a PESQ of 2.92 with 93k parameters on the TAPS dataset, outperforming previous models while enabling real-time edge deployment.</p>
+    </div>
 
-    <script src="script.js"></script>
+    <h2>References</h2>
+    <ol>
+        <li>Y. Xia, S. Braun, C. K. Reddy, H. Dubey, R. Cutler, and I. Tashev, “Weighted speech distortion losses for neural-network-based real-time speech enhancement,” in IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2020, pp. 871–875.</li>
+        <li>L. Yang, W. Liu, R. Meng, G. Lee, S. Baek, and H.-G. Moon, “Fspen: an ultra-lightweight network for real-time speech enhancement,” in IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2024, pp. 10 671–10 675.</li>
+        <li>L. He, H. Hou, S. Shi, X. Shuai, and Z. Yan, “Towards bone-conducted vibration speech enhancement on head-mounted wearables,” in Proceedings of the 21st Annual International Conference on Mobile Systems, Applications and Services, 2023, pp. 14–27.</li>
+    </ol>
+
+    <h2>Comparison Table</h2>
+    <table>
+        <tr>
+            <th>Speaker</th>
+            <th>ACC</th>
+            <th>MIC</th>
+            <th>Noisy</th>
+            <th>NsNet [1]</th>
+            <th>FSPEN [2]</th>
+            <th>VibVoice [3]</th>
+            <th>LAU-Net</th>
+        </tr>
+        <tr>
+            <td>Sample 1</td>
+            <td><audio controls src="path/to/acc_sample1.wav"></audio></td>
+            <td><audio controls src="path/to/mic_sample1.wav"></audio></td>
+            <td><audio controls src="path/to/noisy_sample1.wav"></audio></td>
+            <td><audio controls src="path/to/nsnet_sample1.wav"></audio></td>
+            <td><audio controls src="path/to/fspen_sample1.wav"></audio></td>
+            <td><audio controls src="path/to/vibvoice_sample1.wav"></audio></td>
+            <td><audio controls src="path/to/LAU-Net_sample1.wav"></audio></td>
+        </tr>
+        <tr>
+            <td>Sample 2</td>
+            <td><audio controls src="path/to/acc_sample2.wav"></audio></td>
+            <td><audio controls src="path/to/mic_sample2.wav"></audio></td>
+            <td><audio controls src="path/to/noisy_sample2.wav"></audio></td>
+            <td><audio controls src="path/to/nsnet_sample2.wav"></audio></td>
+            <td><audio controls src="path/to/fspen_sample2.wav"></audio></td>
+            <td><audio controls src="path/to/vibvoice_sample2.wav"></audio></td>
+            <td><audio controls src="path/to/LAU-Net_sample2.wav"></audio></td>
+        </tr>
+    </table>
+
+    <script>
+        // Replace 'path/to' with actual file paths from your GitHub repository
+    </script>
 </body>
 </html>
