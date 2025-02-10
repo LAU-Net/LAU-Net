@@ -29,6 +29,7 @@ The specific versions of the required modules are listed in the **requirements.t
 │   ├── Test/
 │   │   ├── ...
 ├── checkpoint/
+├── homepage/ # about audio samples and homepage
 │
 ├── preprocessing.py        
 ├── dataset.py
@@ -39,6 +40,7 @@ The specific versions of the required modules are listed in the **requirements.t
 ├── compute_metric.py 
 ├── metric_helper.py 
 ├── util.py
+├── index.html # about homepage (<a href="https://lau-net.github.io/LAU-Net/">)
 ```
 # Dataset
 ### Throat and acoustic microphone paired dataset
