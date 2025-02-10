@@ -40,11 +40,11 @@ The specific versions of the required modules are listed in the **requirements.t
 ├── compute_metric.py 
 ├── metric_helper.py 
 ├── util.py
-├── index.html # about homepage (<a href="https://lau-net.github.io/LAU-Net/"> URL)
+├── index.html # about homepage (URL: "https://lau-net.github.io/LAU-Net/")
 ```
 # Dataset
 ### Throat and acoustic microphone paired dataset
-* <a href="http://taps.postech.ac.kr/"> 60 people and 6,000 paired recordings </a>
+* <a href="https://huggingface.co/datasets/yskim3271/Throat_and_Acoustic_Pairing_Speech_Dataset"> 60 people and 6,000 paired recordings </a>
 
 # Quick Start
 
