@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Lightweight Speech Enhancement Model Based on Harmonic Attention and Phase Estimation with Skin-Attachable Accelerometer</title>
+    <title>Lightweight Speech Enhancement Model Based on Harmonic Attention and Phase Estimation with Skin-Attachable Accelerometer</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -49,14 +49,14 @@
     </style>
 </head>
 <body>
-    <h1>A Lightweight Speech Enhancement Model Based on Harmonic Attention and Phase Estimation with Skin-Attachable Accelerometer</h1>
+    <h1>Lightweight Speech Enhancement Model Based on Harmonic Attention and Phase Estimation with Skin-Attachable Accelerometer</h1>
 
     <h2>Introduction</h2>
     <p>Welcome to the official page of a lightweight ACC-assisted U-Net (LAU-Net). This model enhances speech in noisy environments using harmonic attention and phase merge techniques. The code for this project can be found at <a href="https://github.com/LAU-Net/LAU-Net.git" target="_blank">https://github.com/LAU-Net/LAU-Net.git</a>.</p>
 
     <div class="abstract">
         <h2>Abstract</h2>
-        <p>Speech enhancement in noisy environments is challenging as microphones (MICs) are susceptible to ambient noise. Skin-attachable accelerometers (ACCs) offer a noise-resistant alternative by capturing speech vibration through the skin, complementing MIC limitations. However, prior multi-modal models using both sensors face trade-offs between processing overhead and performance. In this study, we propose a lightweight ACC-assisted U-Net (LAU-Net), a multi-modal model for real-time speech enhancement. LAU-Net consists of two low-complexity components. First, a harmonic attention module extracts harmonics from ACC signals and applies attention to them in the spectrogram. Second, a phase merge strategy adaptively selects between MIC and ACC phases based on noise levels. In addition, we apply 8-bit quantization to reduce computational cost. The LAU-Net achieves a PESQ of 2.92 with 93k parameters on the TAPS dataset, outperforming previous models while enabling real-time edge deployment.</p>
+        <p>Skin-attachable accelerometers (ACCs) capture speech vibrations through the skin, providing a noise-resistant complement to microphone (MIC) signals. However, prior multi-modal models combining these signals face trade-offs between processing overhead and performance, limiting their practical applicability. This study proposes a lightweight ACC-assisted U-Net (LAU-Net) for realtime speech enhancement. LAU-Net features a harmonic attention module that enhances spectral clarity by emphasizing speech harmonics predicted from ACC signals while requiring only 0.69k additional parameters. The phase merge block of LAU-Net adaptively integrates ACC and MIC phases based on noise levels, eliminating the need for phase training. LAU-Net achieves a PESQ of 2.92 with 93k parameters on the TAPS dataset, demonstrating a balance between speech quality and computational efficiency. These results highlight LAU-Net as a practical solution for noise-robust speech processing with realtime edge deployment.</p>
     </div>
 
     <h2>References</h2>
