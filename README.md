@@ -43,7 +43,7 @@ The specific versions of the required modules are listed in the **requirements.t
 ├── index.html # about homepage (URL: "https://lau-net.github.io/LAU-Net/")
 ```
 # Dataset
-### Throat and acoustic microphone paired dataset
+### We used throat and acoustic microphone paired dataset
 * <a href="https://huggingface.co/datasets/yskim3271/Throat_and_Acoustic_Pairing_Speech_Dataset"> 60 people and 6,000 paired recordings </a>
 
 # Quick Start
